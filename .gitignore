@@ -1,0 +1,31 @@
+# Android build output and signing material
+android/build/
+android/signing/
+
+# Windows build output
+windows/bin/
+windows/obj/
+windows/publish/
+
+# Local app data, credentials, and diagnostics
+.sentinel_state.json
+*.vault
+vault.bin
+password.txt
+*.p12
+*.keystore
+*.jks
+.env
+.env.*
+!.env.example
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# IDE and OS files
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

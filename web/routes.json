@@ -1,0 +1,64 @@
+{
+  "openai": {
+    "base": "https://api.openai.com",
+    "paths": [
+      "/v1/organization/costs",
+      "/v1/organization/usage/completions"
+    ],
+    "auth": "bearer"
+  },
+  "anthropic": {
+    "base": "https://api.anthropic.com",
+    "paths": [
+      "/v1/organizations/usage_report/messages",
+      "/v1/organizations/cost_report"
+    ],
+    "auth": "anthropic"
+  },
+  "openrouter": {
+    "base": "https://openrouter.ai",
+    "paths": [
+      "/api/v1/key",
+      "/api/v1/credits"
+    ],
+    "auth": "bearer"
+  },
+  "deepseek": {
+    "base": "https://api.deepseek.com",
+    "paths": [
+      "/user/balance"
+    ],
+    "auth": "bearer"
+  },
+  "coarena": {
+    "base": "https://coarena.ai",
+    "paths": [
+      "/api/v1/credits",
+      "/api/v1/usage",
+      "/api/v1/limits"
+    ],
+    "auth": "bearer"
+  },
+  "ollama": {
+    "base": "",
+    "paths": [
+      "/api/tags",
+      "/api/ps",
+      "/api/generate"
+    ],
+    "auth": "optional"
+  },
+  "manual": {
+    "base": "",
+    "paths": [],
+    "auth": "none"
+  },
+  "agentrouter": {
+    "base": "https://agentrouter.org",
+    "paths": [
+      "/v1/dashboard/billing/subscription",
+      "/v1/dashboard/billing/usage"
+    ],
+    "auth": "bearer"
+  }
+}

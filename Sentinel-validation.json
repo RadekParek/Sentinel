@@ -1,0 +1,223 @@
+{
+  "version": "1.1.0",
+  "checks": {
+    "final-native-tests.json": {
+      "passed": true,
+      "checks": {
+        "codexCumulativeNotDoubleCounted": true,
+        "inheritedBaselineNotCounted": true,
+        "claudeChunksMergeable": true,
+        "publicOllamaRejected": true,
+        "privateOllamaAccepted": true,
+        "vaultEncryptsAndRoundTrips": true
+      },
+      "artifactSha256": "e875f8a16fac6d0530e3fc157059313017c41b42583c3c1450f7b61fdc8ffdc6"
+    },
+    "provider-results.json": {
+      "passed": true,
+      "results": [
+        {
+          "name": "OpenRouter separates key usage from account wallet",
+          "passed": true
+        },
+        {
+          "name": "OpenRouter still reports key usage when wallet scope is missing",
+          "passed": true
+        },
+        {
+          "name": "DeepSeek never converts a CNY balance into USD",
+          "passed": true
+        },
+        {
+          "name": "Coarena uses available credits and reported 30-day tokens",
+          "passed": true
+        },
+        {
+          "name": "OpenAI pagination totals dollars exactly once",
+          "passed": true
+        },
+        {
+          "name": "Anthropic costs in cents and cache input categories",
+          "passed": true
+        },
+        {
+          "name": "Refresh failures do not turn unknown data into zero",
+          "passed": true
+        },
+        {
+          "name": "Manual balances have manual provenance",
+          "passed": true
+        },
+        {
+          "name": "Ollama refresh does not generate or invent global tokens",
+          "passed": true
+        },
+        {
+          "name": "Malformed billing report is an error, not a zero dollar total",
+          "passed": true
+        },
+        {
+          "name": "AgentRouter key allowance is not an account wallet",
+          "passed": true
+        },
+        {
+          "name": "Boolean billing values cannot become dollar amounts",
+          "passed": true
+        },
+        {
+          "name": "Missing Coarena token fields stay unknown",
+          "passed": true
+        }
+      ]
+    },
+    "wallet-results.json": {
+      "passed": true,
+      "results": [
+        {
+          "name": "Percentages derive from included balances only",
+          "passed": true
+        },
+        {
+          "name": "Multiple ungrouped keys never inflate an account wallet",
+          "passed": true
+        },
+        {
+          "name": "Explicit shared account group counts once",
+          "passed": true
+        },
+        {
+          "name": "Distinct account groups both contribute",
+          "passed": true
+        },
+        {
+          "name": "Conflicting shared wallet balances are excluded",
+          "passed": true
+        },
+        {
+          "name": "Stale failed unknown and manual values do not become real credits",
+          "passed": true
+        },
+        {
+          "name": "A real zero balance is known but has no invented percentage",
+          "passed": true
+        }
+      ]
+    },
+    "ui-results.json": {
+      "passed": true,
+      "checks": [
+        "desktop navigation",
+        "directory search",
+        "manual wallet",
+        "masked keys",
+        "native clipboard dispatch",
+        "custom service persistence",
+        "disconnect",
+        "390px responsive layout",
+        "refresh setting",
+        "wallet coverage details",
+        "local log and provider filters",
+        "dark theme"
+      ],
+      "consoleErrors": []
+    },
+    "final-exe-integration.json": {
+      "passed": true,
+      "checks": {
+        "webviewLoaded": true,
+        "navigationRendered": true,
+        "localCardsRendered": true,
+        "bridgeReturnsWindows": true,
+        "keyMaterialMasked": true,
+        "codexScanAvailable": true,
+        "claudeScanAvailable": true,
+        "walletOpens": true,
+        "logoAssetsLoaded": true,
+        "reportLogPersists": true,
+        "realProvidersUpdated": true
+      },
+      "artifactSha256": "e875f8a16fac6d0530e3fc157059313017c41b42583c3c1450f7b61fdc8ffdc6"
+    },
+    "final-meter-tests.json": {
+      "passed": true,
+      "checks": {
+        "streamForwarded": true,
+        "realReportedCountsPersisted": true,
+        "noPromptsOrResponsesStored": true,
+        "unapprovedEndpointsRejected": true,
+        "meterStopped": true,
+        "historySurvivesRestart": true
+      },
+      "artifactSha256": "e875f8a16fac6d0530e3fc157059313017c41b42583c3c1450f7b61fdc8ffdc6"
+    },
+    "final-upgrade-tests.json": {
+      "passed": true,
+      "checks": {
+        "publicStateMasksKey": true,
+        "encryptedAtRest": true,
+        "dpapiReopen": true,
+        "reportLogContainsRealFieldsOnly": true,
+        "clearKeyPersists": true,
+        "clearReportLogPersists": true,
+        "oauthUsesOfficialHostAndS256": true,
+        "oauthRejectsWrongState": true,
+        "pkceVerifierStaysNative": true,
+        "loopbackAuthorizationReturnsKey": true
+      },
+      "artifactSha256": "e875f8a16fac6d0530e3fc157059313017c41b42583c3c1450f7b61fdc8ffdc6"
+    },
+    "android-results.json": {
+      "passed": true,
+      "checks": {
+        "publicStateMasksKey": true,
+        "keystoreEncryptsAtRest": true,
+        "keystoreVaultReopens": true,
+        "reportLogKeepsOnlySafeFields": true,
+        "clearKeyPersists": true,
+        "clearReportLogPersists": true,
+        "windowsDiscoveryHonestlyUnavailable": true,
+        "appearancePersistsNatively": true,
+        "nativeWebViewNavigationRenders": true,
+        "nativeWebViewHasNoHorizontalOverflow": true,
+        "bundledLogoImagesRender": true
+      },
+      "artifactSha256": "3a22480958dee24dbc1184967262e5f2629f82a553a062a9a7cc5aecf56e6703"
+    }
+  },
+  "android": {
+    "install": "success",
+    "launch": "success",
+    "render": "verified on emulator API35; native navigation, logos and no horizontal overflow checked",
+    "vault": "Android Keystore encryption, reopen and key removal verified by instrumentation",
+    "signature": "APK v2 and v3 verified"
+  },
+  "artifacts": [
+    {
+      "name": "Sentinel.exe",
+      "bytes": 83477689,
+      "sha256": "e875f8a16fac6d0530e3fc157059313017c41b42583c3c1450f7b61fdc8ffdc6"
+    },
+    {
+      "name": "Sentinel.apk",
+      "bytes": 121802,
+      "sha256": "3a22480958dee24dbc1184967262e5f2629f82a553a062a9a7cc5aecf56e6703"
+    },
+    {
+      "name": "Sentinel-README.md",
+      "bytes": 7423,
+      "sha256": "d4795c180bb7f188f9eb54ac86553361cac61f062631334bc0b3e8c4565faa4a"
+    }
+  ],
+  "releaseAudit": {
+    "passed": true,
+    "version": "1.1.0",
+    "checks": {
+      "publishedDesktopAndOutputsMatch": true,
+      "nativeReportsMatchFinalArtifactHashes": true,
+      "allRecordedVerificationSuitesPassed": true,
+      "sourceArchiveExcludesPrivateAndGeneratedPaths": true,
+      "configuredCredentialsAbsentFromFinalBinariesAndSource": true,
+      "realLocalProviderConnectionsPresent": true
+    }
+  }
+}
